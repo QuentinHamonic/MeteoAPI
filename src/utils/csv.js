@@ -19,7 +19,7 @@ function parserLigneCSV(ligne, separateur) {
     return colonnes;
 }
 
-async function parseCsv() {
+export async function parseCsv() {
 
     // Construit le chemin du fichier CSV relatif a ce module (portable).
     const cheminCsv = fileURLToPath(
@@ -48,4 +48,3 @@ async function parseCsv() {
          mesure.temperature_max && mesure.description && mesure.humidite);
 }
 
-console.log(await parseCsv())
