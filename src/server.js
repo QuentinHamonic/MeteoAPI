@@ -3,5 +3,5 @@ import app from "./app.js";
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Restaurant Admin → http://localhost:${PORT}`);
+  console.log(`MétéoAPI → http://localhost:${PORT}`);
 });
