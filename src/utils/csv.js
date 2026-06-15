@@ -19,13 +19,10 @@ function parserLigneCSV(ligne, separateur) {
     return colonnes;
 }
 
-export async function parseCsv() {
+export async function parseCsv(CheminCsv) {
 
-    // Construit le chemin du fichier CSV relatif a ce module (portable).
-    const cheminCsv = fileURLToPath(
-        new URL('../../donnees/meteo.csv', import.meta.url)
-    );
-    const csv = await readFile(cheminCsv, "utf-8");
+    console.log(CheminCsv)
+    const csv = await readFile(CheminCsv, "utf-8");
 
     // La première ligne est l'en-tête — on la saute
     const lignes = csv.split('\n').filter(l => l.trim());
