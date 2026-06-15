@@ -1,3 +1,6 @@
+/**
+ * Représente un relevé météo pour une ville et une date données.
+ */
 export class Releve {
 
     #id
@@ -8,6 +11,16 @@ export class Releve {
     #description
     #humidite
 
+    /**
+     * @param {Object} donnees
+     * @param {number|null} [donnees.id] - Identifiant du relevé (null si pas encore persisté).
+     * @param {string} donnees.ville - Nom de la ville.
+     * @param {string} donnees.date - Date du relevé (format YYYY-MM-DD).
+     * @param {number} donnees.temperature_min - Température minimale relevée (°C).
+     * @param {number} donnees.temperature_max - Température maximale relevée (°C).
+     * @param {string} donnees.description - Description du temps (ex : "Neige légère").
+     * @param {number} donnees.humidite - Taux d'humidité relevé (%).
+     */
     constructor(donnees) {
 
         this.#id = donnees.id ?? null
@@ -19,6 +32,10 @@ export class Releve {
         this.#humidite = donnees.humidite
     }
 
+    /**
+     * Vérifie que le relevé respecte les règles métier attendues.
+     * @returns {string[]} La liste des messages d'erreur ; tableau vide si le relevé est valide.
+     */
     valider(){
         const tableau = [];
         this.#ville === undefined ? tableau.push('ville non déclarée') : '';
@@ -38,6 +55,10 @@ export class Releve {
         return tableau
     }
 
+    /**
+     * Sérialise le relevé sous forme d'objet brut (appelé automatiquement par JSON.stringify / res.json()).
+     * @returns {Object} Représentation brute du relevé (id, ville, date, températures, description, humidité).
+     */
     toJSON(){
 
         return {
@@ -51,6 +72,12 @@ export class Releve {
         }
     }
 
+    /**
+     * Construit un Releve à partir d'une ligne brute du fichier CSV (sans la ligne d'en-tête).
+     * Le CSV ne contient pas d'id : il vaut null jusqu'à son attribution par le repository.
+     * @param {string} ligne - Une ligne du CSV, ex : "Paris;2024-01-15;-1;1;Neige légère;91".
+     * @returns {Releve} Le relevé correspondant à la ligne.
+     */
     static depuisLigneCsv(ligne){
         const label = ['ville', 'date', 'temperature_min', 'temperature_max', 
             'description', 'humidite']
