@@ -1,0 +1,51 @@
+import { fileURLToPath } from "node:url";
+import { readFile } from 'node:fs/promises';
+
+
+function parserLigneCSV(ligne, separateur) {
+    const colonnes = [];
+    let valeur = '';
+
+    for (let i = 0; i < ligne.length; i++) {
+        const caractere = ligne[i];
+        if (caractere === separateur) {
+            colonnes.push(valeur);
+            valeur = '';
+        } else {
+            valeur += caractere;
+        }
+    }
+    colonnes.push(valeur);
+    return colonnes;
+}
+
+async function parseCsv() {
+
+    // Construit le chemin du fichier CSV relatif a ce module (portable).
+    const cheminCsv = fileURLToPath(
+        new URL('../../donnees/meteo.csv', import.meta.url)
+    );
+    const csv = await readFile(cheminCsv, "utf-8");
+
+    // La première ligne est l'en-tête — on la saute
+    const lignes = csv.split('\n').filter(l => l.trim());
+    const separateur = lignes[0]?.includes(';') ? ';' : ',';
+
+
+    return lignes.slice(1).map((ligne, index) => {
+
+        const colonnes = parserLigneCSV(ligne, separateur)
+        return {
+            id: index + 1,
+            ville: colonnes[0]?.trim() ?? '',
+            date: colonnes[1]?.trim() ?? '',
+            temperature_min: parseInt(colonnes[2]?.trim() ?? ''),
+            temperature_max: parseInt(colonnes[3]?.trim() ?? ''),
+            description: colonnes[4]?.trim() ?? '',
+            humidite: parseInt(colonnes[5]?.trim() ?? '')
+        };
+    }).filter(mesure => mesure.ville && mesure.date && mesure.temperature_min &&
+         mesure.temperature_max && mesure.description && mesure.humidite);
+}
+
+console.log(await parseCsv())

@@ -1,0 +1,841 @@
+ville;date;temperature_min;temperature_max;description;humidite
+Paris;2024-01-15;-1;1;Neige légère;91
+Lyon;2024-01-15;-1;1;Couvert;86
+Marseille;2024-01-15;5;7;Couvert;87
+Bordeaux;2024-01-15;2;5;Pluie;91
+Toulouse;2024-01-15;2;5;Pluie;89
+Paris;2024-01-15;0;2;Neige légère;92
+Lyon;2024-01-15;-2;0;Neige légère;93
+Marseille;2024-01-15;5;8;Pluie;92
+Bordeaux;2024-01-15;1;2;Pluie;89
+Toulouse;2024-01-15;1;4;Pluie;95
+Paris;2024-01-15;-1;0;Neige légère;89
+Lyon;2024-01-15;-3;0;Neige légère;94
+Marseille;2024-01-15;4;7;Pluie;92
+Bordeaux;2024-01-15;1;2;Pluie;94
+Toulouse;2024-01-15;0;2;Neige légère;89
+Paris;2024-01-15;-1;2;Pluie légère;87
+Lyon;2024-01-15;-1;1;Neige légère;95
+Marseille;2024-01-15;5;7;Pluie;91
+Bordeaux;2024-01-15;0;3;Pluie;93
+Toulouse;2024-01-15;1;4;Couvert;83
+Paris;2024-01-15;-1;1;Neige légère;94
+Lyon;2024-01-15;-2;1;Neige légère;92
+Marseille;2024-01-15;4;6;Pluie légère;85
+Bordeaux;2024-01-15;1;3;Pluie;88
+Toulouse;2024-01-15;1;3;Couvert;84
+Paris;2024-01-15;0;2;Couvert;83
+Lyon;2024-01-15;-1;2;Neige légère;89
+Marseille;2024-01-15;6;7;Pluie légère;82
+Bordeaux;2024-01-15;1;4;Couvert;80
+Toulouse;2024-01-15;4;6;Pluie légère;86
+Paris;2024-01-15;1;3;Pluie légère;84
+Lyon;2024-01-15;1;4;Couvert;82
+Marseille;2024-01-15;7;8;Couvert;86
+Bordeaux;2024-01-15;4;7;Pluie légère;81
+Toulouse;2024-01-15;2;5;Couvert;82
+Paris;2024-01-15;2;5;Nuageux;73
+Lyon;2024-01-15;0;3;Nuageux;74
+Marseille;2024-01-15;6;9;Couvert;81
+Bordeaux;2024-01-15;4;7;Pluie légère;84
+Toulouse;2024-01-15;3;6;Pluie légère;80
+Paris;2024-01-15;4;7;Nuageux;73
+Lyon;2024-01-15;1;4;Nuageux;70
+Marseille;2024-01-15;9;11;Nuageux;76
+Bordeaux;2024-01-15;5;7;Nuageux;72
+Toulouse;2024-01-15;4;6;Nuageux;77
+Paris;2024-01-15;3;5;Nuageux;71
+Lyon;2024-01-15;3;5;Nuageux;76
+Marseille;2024-01-15;10;12;Nuageux;75
+Bordeaux;2024-01-15;5;8;Nuageux;76
+Toulouse;2024-01-15;6;8;Partiellement nuageux;67
+Paris;2024-01-15;5;7;Partiellement nuageux;64
+Lyon;2024-01-15;4;6;Nuageux;71
+Marseille;2024-01-15;9;12;Nuageux;72
+Bordeaux;2024-01-15;7;10;Partiellement nuageux;68
+Toulouse;2024-01-15;7;9;Partiellement nuageux;63
+Paris;2024-01-15;6;8;Partiellement nuageux;67
+Lyon;2024-01-15;5;7;Nuageux;70
+Marseille;2024-01-15;12;14;Ensoleillé;69
+Bordeaux;2024-01-15;9;11;Ensoleillé;65
+Toulouse;2024-01-15;8;11;Partiellement nuageux;64
+Paris;2024-01-15;6;9;Partiellement nuageux;62
+Lyon;2024-01-15;5;6;Partiellement nuageux;57
+Marseille;2024-01-15;10;13;Ensoleillé;62
+Bordeaux;2024-01-15;8;10;Partiellement nuageux;60
+Toulouse;2024-01-15;10;12;Ensoleillé;61
+Paris;2024-01-15;7;10;Partiellement nuageux;61
+Lyon;2024-01-15;6;9;Partiellement nuageux;61
+Marseille;2024-01-15;12;15;Ensoleillé;58
+Bordeaux;2024-01-15;8;10;Partiellement nuageux;63
+Toulouse;2024-01-15;9;11;Ensoleillé;64
+Paris;2024-01-15;7;10;Partiellement nuageux;60
+Lyon;2024-01-15;6;7;Partiellement nuageux;64
+Marseille;2024-01-15;11;13;Ensoleillé;59
+Bordeaux;2024-01-15;9;11;Ensoleillé;58
+Toulouse;2024-01-15;9;11;Ensoleillé;65
+Paris;2024-01-15;6;9;Partiellement nuageux;61
+Lyon;2024-01-15;6;8;Partiellement nuageux;65
+Marseille;2024-01-15;12;15;Ensoleillé;57
+Bordeaux;2024-01-15;9;12;Ensoleillé;56
+Toulouse;2024-01-15;8;10;Partiellement nuageux;57
+Paris;2024-01-15;7;9;Partiellement nuageux;56
+Lyon;2024-01-15;6;8;Partiellement nuageux;62
+Marseille;2024-01-15;12;15;Ensoleillé;63
+Bordeaux;2024-01-15;8;11;Partiellement nuageux;67
+Toulouse;2024-01-15;9;11;Ensoleillé;62
+Paris;2024-01-15;5;8;Partiellement nuageux;67
+Lyon;2024-01-15;5;8;Partiellement nuageux;62
+Marseille;2024-01-15;12;14;Ensoleillé;65
+Bordeaux;2024-01-15;8;11;Partiellement nuageux;64
+Toulouse;2024-01-15;8;10;Partiellement nuageux;59
+Paris;2024-01-15;6;8;Partiellement nuageux;62
+Lyon;2024-01-15;5;7;Nuageux;71
+Marseille;2024-01-15;10;12;Nuageux;72
+Bordeaux;2024-01-15;7;9;Nuageux;70
+Toulouse;2024-01-15;6;9;Partiellement nuageux;62
+Paris;2024-01-15;5;7;Nuageux;77
+Lyon;2024-01-15;3;6;Partiellement nuageux;66
+Marseille;2024-01-15;10;13;Nuageux;73
+Bordeaux;2024-01-15;5;8;Nuageux;76
+Toulouse;2024-01-15;5;7;Partiellement nuageux;65
+Paris;2024-01-15;4;6;Nuageux;77
+Lyon;2024-01-15;2;4;Nuageux;78
+Marseille;2024-01-15;8;10;Nuageux;79
+Bordeaux;2024-01-15;4;7;Couvert;80
+Toulouse;2024-01-15;6;7;Nuageux;78
+Paris;2024-01-15;2;4;Nuageux;74
+Lyon;2024-01-15;1;4;Nuageux;74
+Marseille;2024-01-15;7;9;Couvert;81
+Bordeaux;2024-01-15;4;5;Nuageux;75
+Toulouse;2024-01-15;3;5;Nuageux;77
+Paris;2024-01-15;1;3;Pluie;88
+Lyon;2024-01-15;0;2;Pluie légère;85
+Marseille;2024-01-15;5;7;Couvert;81
+Bordeaux;2024-01-15;3;5;Pluie légère;82
+Toulouse;2024-01-15;3;6;Couvert;86
+Paris;2024-01-15;0;2;Neige légère;92
+Lyon;2024-01-15;-2;0;Couvert;86
+Marseille;2024-01-15;5;7;Pluie;90
+Bordeaux;2024-01-15;3;6;Couvert;82
+Toulouse;2024-01-15;3;4;Pluie légère;84
+Paris;2024-01-16;0;1;Pluie légère;86
+Lyon;2024-01-16;0;2;Pluie légère;87
+Marseille;2024-01-16;6;8;Couvert;85
+Bordeaux;2024-01-16;1;3;Pluie;91
+Toulouse;2024-01-16;2;5;Pluie;93
+Paris;2024-01-16;-1;1;Neige légère;92
+Lyon;2024-01-16;-2;1;Pluie légère;84
+Marseille;2024-01-16;5;7;Pluie;92
+Bordeaux;2024-01-16;1;3;Pluie;91
+Toulouse;2024-01-16;0;3;Pluie;91
+Paris;2024-01-16;-1;1;Neige légère;92
+Lyon;2024-01-16;-1;1;Neige légère;90
+Marseille;2024-01-16;4;7;Pluie;93
+Bordeaux;2024-01-16;1;2;Pluie;91
+Toulouse;2024-01-16;2;4;Pluie;94
+Paris;2024-01-16;0;2;Couvert;84
+Lyon;2024-01-16;-1;1;Neige légère;93
+Marseille;2024-01-16;6;9;Pluie légère;84
+Bordeaux;2024-01-16;1;3;Pluie;91
+Toulouse;2024-01-16;1;3;Pluie;93
+Paris;2024-01-16;-1;2;Neige légère;89
+Lyon;2024-01-16;0;1;Pluie légère;83
+Marseille;2024-01-16;5;7;Pluie;90
+Bordeaux;2024-01-16;3;5;Pluie;88
+Toulouse;2024-01-16;1;4;Pluie;88
+Paris;2024-01-16;-1;2;Neige légère;90
+Lyon;2024-01-16;0;2;Couvert;87
+Marseille;2024-01-16;6;7;Couvert;87
+Bordeaux;2024-01-16;4;7;Pluie;91
+Toulouse;2024-01-16;2;5;Pluie;91
+Paris;2024-01-16;2;4;Pluie;88
+Lyon;2024-01-16;2;4;Pluie légère;82
+Marseille;2024-01-16;5;8;Pluie légère;80
+Bordeaux;2024-01-16;3;6;Couvert;84
+Toulouse;2024-01-16;3;7;Nuageux;79
+Paris;2024-01-16;2;5;Nuageux;73
+Lyon;2024-01-16;-1;2;Pluie légère;80
+Marseille;2024-01-16;8;10;Nuageux;78
+Bordeaux;2024-01-16;5;7;Couvert;81
+Toulouse;2024-01-16;4;6;Nuageux;75
+Paris;2024-01-16;3;5;Nuageux;78
+Lyon;2024-01-16;2;4;Nuageux;74
+Marseille;2024-01-16;8;10;Nuageux;77
+Bordeaux;2024-01-16;5;7;Nuageux;74
+Toulouse;2024-01-16;5;8;Nuageux;78
+Paris;2024-01-16;5;7;Partiellement nuageux;68
+Lyon;2024-01-16;4;7;Nuageux;73
+Marseille;2024-01-16;8;10;Partiellement nuageux;68
+Bordeaux;2024-01-16;7;10;Nuageux;77
+Toulouse;2024-01-16;6;8;Partiellement nuageux;66
+Paris;2024-01-16;5;7;Partiellement nuageux;64
+Lyon;2024-01-16;5;6;Partiellement nuageux;65
+Marseille;2024-01-16;9;12;Nuageux;70
+Bordeaux;2024-01-16;7;9;Nuageux;73
+Toulouse;2024-01-16;8;11;Nuageux;70
+Paris;2024-01-16;6;9;Nuageux;70
+Lyon;2024-01-16;6;8;Partiellement nuageux;65
+Marseille;2024-01-16;12;14;Ensoleillé;65
+Bordeaux;2024-01-16;7;10;Partiellement nuageux;60
+Toulouse;2024-01-16;9;11;Ensoleillé;69
+Paris;2024-01-16;7;10;Partiellement nuageux;67
+Lyon;2024-01-16;5;7;Partiellement nuageux;64
+Marseille;2024-01-16;11;14;Ensoleillé;56
+Bordeaux;2024-01-16;9;12;Ensoleillé;61
+Toulouse;2024-01-16;8;11;Partiellement nuageux;64
+Paris;2024-01-16;8;11;Partiellement nuageux;58
+Lyon;2024-01-16;7;9;Partiellement nuageux;66
+Marseille;2024-01-16;12;14;Ensoleillé;58
+Bordeaux;2024-01-16;10;12;Ensoleillé;58
+Toulouse;2024-01-16;9;11;Ensoleillé;57
+Paris;2024-01-16;7;10;Partiellement nuageux;56
+Lyon;2024-01-16;8;10;Partiellement nuageux;55
+Marseille;2024-01-16;13;15;Ensoleillé;65
+Bordeaux;2024-01-16;10;13;Ensoleillé;54
+Toulouse;2024-01-16;10;12;Ensoleillé;65
+Paris;2024-01-16;6;9;Partiellement nuageux;55
+Lyon;2024-01-16;5;7;Partiellement nuageux;59
+Marseille;2024-01-16;13;16;Ensoleillé;65
+Bordeaux;2024-01-16;9;11;Ensoleillé;59
+Toulouse;2024-01-16;8;11;Partiellement nuageux;66
+Paris;2024-01-16;7;9;Partiellement nuageux;58
+Lyon;2024-01-16;6;8;Partiellement nuageux;58
+Marseille;2024-01-16;12;15;Ensoleillé;56
+Bordeaux;2024-01-16;9;11;Ensoleillé;60
+Toulouse;2024-01-16;8;10;Partiellement nuageux;63
+Paris;2024-01-16;6;9;Partiellement nuageux;59
+Lyon;2024-01-16;4;6;Partiellement nuageux;61
+Marseille;2024-01-16;11;14;Ensoleillé;66
+Bordeaux;2024-01-16;8;11;Nuageux;70
+Toulouse;2024-01-16;9;12;Ensoleillé;67
+Paris;2024-01-16;4;6;Partiellement nuageux;69
+Lyon;2024-01-16;5;7;Partiellement nuageux;68
+Marseille;2024-01-16;10;12;Ensoleillé;66
+Bordeaux;2024-01-16;7;9;Partiellement nuageux;66
+Toulouse;2024-01-16;8;11;Partiellement nuageux;63
+Paris;2024-01-16;4;6;Partiellement nuageux;66
+Lyon;2024-01-16;3;5;Nuageux;72
+Marseille;2024-01-16;8;11;Nuageux;75
+Bordeaux;2024-01-16;6;8;Partiellement nuageux;66
+Toulouse;2024-01-16;6;9;Partiellement nuageux;66
+Paris;2024-01-16;3;5;Nuageux;79
+Lyon;2024-01-16;1;4;Nuageux;71
+Marseille;2024-01-16;8;10;Nuageux;74
+Bordeaux;2024-01-16;4;6;Nuageux;70
+Toulouse;2024-01-16;5;6;Nuageux;74
+Paris;2024-01-16;2;5;Nuageux;77
+Lyon;2024-01-16;1;3;Nuageux;78
+Marseille;2024-01-16;7;9;Nuageux;78
+Bordeaux;2024-01-16;4;7;Nuageux;74
+Toulouse;2024-01-16;3;5;Nuageux;75
+Paris;2024-01-16;0;3;Couvert;82
+Lyon;2024-01-16;1;4;Pluie légère;82
+Marseille;2024-01-16;6;9;Pluie;88
+Bordeaux;2024-01-16;4;7;Nuageux;77
+Toulouse;2024-01-16;4;6;Pluie légère;82
+Paris;2024-01-16;0;3;Pluie;89
+Lyon;2024-01-16;0;2;Pluie légère;81
+Marseille;2024-01-16;5;8;Pluie;89
+Bordeaux;2024-01-16;2;5;Pluie;88
+Toulouse;2024-01-16;2;4;Couvert;81
+Paris;2024-01-17;0;3;Pluie;92
+Lyon;2024-01-17;-1;1;Pluie légère;82
+Marseille;2024-01-17;4;7;Pluie;88
+Bordeaux;2024-01-17;2;4;Pluie;88
+Toulouse;2024-01-17;1;4;Pluie;89
+Paris;2024-01-17;-1;1;Pluie légère;87
+Lyon;2024-01-17;-2;0;Neige légère;91
+Marseille;2024-01-17;5;7;Pluie;88
+Bordeaux;2024-01-17;3;5;Pluie;93
+Toulouse;2024-01-17;0;3;Pluie;92
+Paris;2024-01-17;-1;1;Neige légère;94
+Lyon;2024-01-17;-2;1;Neige légère;92
+Marseille;2024-01-17;3;6;Pluie;90
+Bordeaux;2024-01-17;1;3;Pluie;93
+Toulouse;2024-01-17;1;3;Pluie;95
+Paris;2024-01-17;0;2;Pluie légère;87
+Lyon;2024-01-17;-2;0;Neige légère;88
+Marseille;2024-01-17;5;7;Pluie légère;87
+Bordeaux;2024-01-17;1;4;Couvert;87
+Toulouse;2024-01-17;2;5;Couvert;87
+Paris;2024-01-17;-1;2;Couvert;83
+Lyon;2024-01-17;-2;1;Pluie légère;86
+Marseille;2024-01-17;6;8;Couvert;86
+Bordeaux;2024-01-17;2;5;Pluie légère;86
+Toulouse;2024-01-17;2;4;Pluie;90
+Paris;2024-01-17;-1;2;Neige légère;89
+Lyon;2024-01-17;0;2;Couvert;81
+Marseille;2024-01-17;5;7;Couvert;86
+Bordeaux;2024-01-17;3;5;Pluie légère;87
+Toulouse;2024-01-17;3;4;Couvert;87
+Paris;2024-01-17;1;4;Nuageux;77
+Lyon;2024-01-17;0;3;Couvert;82
+Marseille;2024-01-17;6;8;Nuageux;78
+Bordeaux;2024-01-17;3;5;Nuageux;78
+Toulouse;2024-01-17;3;6;Pluie légère;80
+Paris;2024-01-17;1;4;Pluie légère;80
+Lyon;2024-01-17;1;3;Nuageux;74
+Marseille;2024-01-17;8;10;Pluie légère;84
+Bordeaux;2024-01-17;5;7;Nuageux;74
+Toulouse;2024-01-17;5;8;Nuageux;77
+Paris;2024-01-17;2;4;Nuageux;73
+Lyon;2024-01-17;2;5;Nuageux;70
+Marseille;2024-01-17;9;11;Nuageux;71
+Bordeaux;2024-01-17;4;7;Nuageux;75
+Toulouse;2024-01-17;6;8;Nuageux;78
+Paris;2024-01-17;3;5;Nuageux;70
+Lyon;2024-01-17;3;5;Nuageux;71
+Marseille;2024-01-17;10;12;Ensoleillé;69
+Bordeaux;2024-01-17;6;9;Nuageux;71
+Toulouse;2024-01-17;6;8;Nuageux;75
+Paris;2024-01-17;4;7;Partiellement nuageux;64
+Lyon;2024-01-17;5;7;Partiellement nuageux;65
+Marseille;2024-01-17;10;12;Nuageux;71
+Bordeaux;2024-01-17;7;8;Partiellement nuageux;66
+Toulouse;2024-01-17;7;8;Partiellement nuageux;62
+Paris;2024-01-17;6;7;Partiellement nuageux;64
+Lyon;2024-01-17;5;8;Partiellement nuageux;60
+Marseille;2024-01-17;10;12;Nuageux;70
+Bordeaux;2024-01-17;7;10;Partiellement nuageux;65
+Toulouse;2024-01-17;7;10;Partiellement nuageux;62
+Paris;2024-01-17;7;9;Partiellement nuageux;68
+Lyon;2024-01-17;6;7;Partiellement nuageux;60
+Marseille;2024-01-17;11;13;Ensoleillé;60
+Bordeaux;2024-01-17;8;10;Partiellement nuageux;59
+Toulouse;2024-01-17;8;11;Partiellement nuageux;67
+Paris;2024-01-17;7;10;Partiellement nuageux;66
+Lyon;2024-01-17;6;9;Partiellement nuageux;56
+Marseille;2024-01-17;12;14;Ensoleillé;61
+Bordeaux;2024-01-17;8;11;Partiellement nuageux;64
+Toulouse;2024-01-17;8;11;Partiellement nuageux;60
+Paris;2024-01-17;6;8;Partiellement nuageux;65
+Lyon;2024-01-17;7;9;Partiellement nuageux;64
+Marseille;2024-01-17;12;14;Ensoleillé;55
+Bordeaux;2024-01-17;8;11;Partiellement nuageux;58
+Toulouse;2024-01-17;9;12;Ensoleillé;57
+Paris;2024-01-17;6;9;Partiellement nuageux;61
+Lyon;2024-01-17;6;8;Partiellement nuageux;56
+Marseille;2024-01-17;13;15;Ensoleillé;58
+Bordeaux;2024-01-17;9;11;Ensoleillé;57
+Toulouse;2024-01-17;8;11;Partiellement nuageux;56
+Paris;2024-01-17;7;9;Partiellement nuageux;57
+Lyon;2024-01-17;7;9;Partiellement nuageux;56
+Marseille;2024-01-17;10;12;Ensoleillé;61
+Bordeaux;2024-01-17;7;10;Partiellement nuageux;62
+Toulouse;2024-01-17;8;10;Partiellement nuageux;63
+Paris;2024-01-17;7;10;Partiellement nuageux;59
+Lyon;2024-01-17;4;7;Partiellement nuageux;64
+Marseille;2024-01-17;11;13;Ensoleillé;59
+Bordeaux;2024-01-17;9;11;Ensoleillé;62
+Toulouse;2024-01-17;8;10;Partiellement nuageux;66
+Paris;2024-01-17;5;7;Partiellement nuageux;67
+Lyon;2024-01-17;5;7;Partiellement nuageux;67
+Marseille;2024-01-17;10;13;Ensoleillé;66
+Bordeaux;2024-01-17;7;9;Partiellement nuageux;63
+Toulouse;2024-01-17;7;9;Partiellement nuageux;64
+Paris;2024-01-17;3;6;Nuageux;70
+Lyon;2024-01-17;4;6;Partiellement nuageux;69
+Marseille;2024-01-17;10;13;Nuageux;70
+Bordeaux;2024-01-17;6;7;Nuageux;72
+Toulouse;2024-01-17;6;9;Nuageux;71
+Paris;2024-01-17;3;6;Partiellement nuageux;69
+Lyon;2024-01-17;1;3;Nuageux;74
+Marseille;2024-01-17;8;11;Nuageux;74
+Bordeaux;2024-01-17;6;8;Nuageux;76
+Toulouse;2024-01-17;6;9;Nuageux;70
+Paris;2024-01-17;2;4;Nuageux;73
+Lyon;2024-01-17;1;3;Nuageux;78
+Marseille;2024-01-17;8;10;Pluie légère;80
+Bordeaux;2024-01-17;5;7;Couvert;83
+Toulouse;2024-01-17;4;6;Pluie légère;83
+Paris;2024-01-17;0;2;Pluie légère;83
+Lyon;2024-01-17;0;3;Couvert;84
+Marseille;2024-01-17;5;8;Couvert;87
+Bordeaux;2024-01-17;2;5;Nuageux;77
+Toulouse;2024-01-17;5;8;Couvert;87
+Paris;2024-01-17;0;2;Couvert;84
+Lyon;2024-01-17;0;3;Couvert;81
+Marseille;2024-01-17;6;9;Pluie légère;81
+Bordeaux;2024-01-17;2;5;Pluie;88
+Toulouse;2024-01-17;3;5;Pluie légère;81
+Paris;2024-01-18;-1;0;Neige légère;92
+Lyon;2024-01-18;0;2;Neige légère;88
+Marseille;2024-01-18;4;6;Pluie;88
+Bordeaux;2024-01-18;2;3;Pluie légère;84
+Toulouse;2024-01-18;1;4;Couvert;83
+Paris;2024-01-18;-1;2;Couvert;83
+Lyon;2024-01-18;-1;2;Neige légère;91
+Marseille;2024-01-18;5;8;Pluie;91
+Bordeaux;2024-01-18;1;4;Couvert;87
+Toulouse;2024-01-18;1;3;Pluie;95
+Paris;2024-01-18;0;3;Pluie;90
+Lyon;2024-01-18;-1;2;Neige légère;94
+Marseille;2024-01-18;4;6;Pluie;91
+Bordeaux;2024-01-18;2;4;Pluie;90
+Toulouse;2024-01-18;2;4;Pluie;94
+Paris;2024-01-18;0;2;Pluie légère;85
+Lyon;2024-01-18;-2;1;Neige légère;90
+Marseille;2024-01-18;4;7;Couvert;84
+Bordeaux;2024-01-18;1;4;Pluie;94
+Toulouse;2024-01-18;2;4;Pluie;90
+Paris;2024-01-18;-1;2;Couvert;87
+Lyon;2024-01-18;0;2;Couvert;87
+Marseille;2024-01-18;6;8;Pluie;92
+Bordeaux;2024-01-18;3;6;Pluie;88
+Toulouse;2024-01-18;1;3;Pluie;94
+Paris;2024-01-18;0;3;Couvert;83
+Lyon;2024-01-18;-1;2;Couvert;86
+Marseille;2024-01-18;4;6;Couvert;81
+Bordeaux;2024-01-18;2;4;Pluie légère;85
+Toulouse;2024-01-18;2;4;Pluie;91
+Paris;2024-01-18;1;3;Pluie légère;83
+Lyon;2024-01-18;0;3;Pluie légère;80
+Marseille;2024-01-18;6;9;Nuageux;77
+Bordeaux;2024-01-18;3;6;Couvert;82
+Toulouse;2024-01-18;4;7;Pluie légère;86
+Paris;2024-01-18;1;3;Nuageux;75
+Lyon;2024-01-18;1;3;Pluie légère;81
+Marseille;2024-01-18;6;9;Couvert;84
+Bordeaux;2024-01-18;4;6;Couvert;83
+Toulouse;2024-01-18;5;7;Nuageux;74
+Paris;2024-01-18;4;5;Nuageux;79
+Lyon;2024-01-18;2;4;Nuageux;71
+Marseille;2024-01-18;8;10;Nuageux;78
+Bordeaux;2024-01-18;5;7;Nuageux;71
+Toulouse;2024-01-18;5;7;Nuageux;70
+Paris;2024-01-18;3;6;Nuageux;70
+Lyon;2024-01-18;4;6;Nuageux;73
+Marseille;2024-01-18;8;10;Partiellement nuageux;67
+Bordeaux;2024-01-18;6;9;Nuageux;72
+Toulouse;2024-01-18;5;8;Partiellement nuageux;65
+Paris;2024-01-18;5;7;Nuageux;70
+Lyon;2024-01-18;3;6;Partiellement nuageux;67
+Marseille;2024-01-18;11;12;Nuageux;71
+Bordeaux;2024-01-18;7;9;Partiellement nuageux;64
+Toulouse;2024-01-18;7;9;Partiellement nuageux;65
+Paris;2024-01-18;6;9;Partiellement nuageux;67
+Lyon;2024-01-18;4;7;Partiellement nuageux;66
+Marseille;2024-01-18;10;12;Ensoleillé;62
+Bordeaux;2024-01-18;8;10;Partiellement nuageux;63
+Toulouse;2024-01-18;7;9;Partiellement nuageux;61
+Paris;2024-01-18;5;8;Partiellement nuageux;58
+Lyon;2024-01-18;6;9;Partiellement nuageux;67
+Marseille;2024-01-18;11;13;Ensoleillé;66
+Bordeaux;2024-01-18;9;11;Ensoleillé;64
+Toulouse;2024-01-18;9;12;Ensoleillé;56
+Paris;2024-01-18;8;10;Partiellement nuageux;65
+Lyon;2024-01-18;5;7;Partiellement nuageux;64
+Marseille;2024-01-18;12;15;Ensoleillé;61
+Bordeaux;2024-01-18;9;11;Ensoleillé;62
+Toulouse;2024-01-18;8;10;Partiellement nuageux;64
+Paris;2024-01-18;7;8;Partiellement nuageux;56
+Lyon;2024-01-18;6;8;Partiellement nuageux;63
+Marseille;2024-01-18;11;13;Ensoleillé;64
+Bordeaux;2024-01-18;9;12;Ensoleillé;58
+Toulouse;2024-01-18;9;12;Ensoleillé;60
+Paris;2024-01-18;7;8;Partiellement nuageux;59
+Lyon;2024-01-18;6;8;Partiellement nuageux;57
+Marseille;2024-01-18;11;14;Ensoleillé;66
+Bordeaux;2024-01-18;8;10;Partiellement nuageux;56
+Toulouse;2024-01-18;9;11;Ensoleillé;66
+Paris;2024-01-18;8;10;Partiellement nuageux;59
+Lyon;2024-01-18;5;7;Partiellement nuageux;67
+Marseille;2024-01-18;12;15;Ensoleillé;63
+Bordeaux;2024-01-18;9;12;Ensoleillé;66
+Toulouse;2024-01-18;8;11;Partiellement nuageux;60
+Paris;2024-01-18;6;8;Partiellement nuageux;66
+Lyon;2024-01-18;5;8;Nuageux;70
+Marseille;2024-01-18;10;13;Ensoleillé;59
+Bordeaux;2024-01-18;7;9;Partiellement nuageux;59
+Toulouse;2024-01-18;9;11;Ensoleillé;62
+Paris;2024-01-18;6;9;Nuageux;73
+Lyon;2024-01-18;4;6;Nuageux;73
+Marseille;2024-01-18;11;13;Nuageux;70
+Bordeaux;2024-01-18;6;8;Partiellement nuageux;65
+Toulouse;2024-01-18;6;9;Nuageux;71
+Paris;2024-01-18;3;6;Nuageux;73
+Lyon;2024-01-18;3;4;Partiellement nuageux;68
+Marseille;2024-01-18;10;12;Nuageux;70
+Bordeaux;2024-01-18;7;9;Partiellement nuageux;69
+Toulouse;2024-01-18;7;9;Nuageux;75
+Paris;2024-01-18;3;5;Couvert;80
+Lyon;2024-01-18;1;4;Nuageux;70
+Marseille;2024-01-18;9;11;Nuageux;77
+Bordeaux;2024-01-18;4;6;Nuageux;72
+Toulouse;2024-01-18;4;7;Nuageux;71
+Paris;2024-01-18;1;3;Nuageux;78
+Lyon;2024-01-18;2;3;Nuageux;74
+Marseille;2024-01-18;7;8;Couvert;82
+Bordeaux;2024-01-18;3;6;Pluie légère;81
+Toulouse;2024-01-18;5;7;Pluie légère;81
+Paris;2024-01-18;1;4;Couvert;85
+Lyon;2024-01-18;1;4;Pluie légère;83
+Marseille;2024-01-18;6;9;Pluie légère;82
+Bordeaux;2024-01-18;3;5;Couvert;80
+Toulouse;2024-01-18;2;4;Nuageux;78
+Paris;2024-01-18;0;3;Pluie légère;87
+Lyon;2024-01-18;0;2;Pluie légère;86
+Marseille;2024-01-18;6;9;Couvert;83
+Bordeaux;2024-01-18;3;6;Pluie;88
+Toulouse;2024-01-18;3;5;Pluie légère;86
+Paris;2024-01-19;-1;2;Pluie légère;82
+Lyon;2024-01-19;-1;1;Neige légère;94
+Marseille;2024-01-19;6;8;Pluie;92
+Bordeaux;2024-01-19;1;3;Pluie légère;85
+Toulouse;2024-01-19;2;4;Couvert;84
+Paris;2024-01-19;-2;0;Couvert;86
+Lyon;2024-01-19;-2;1;Neige légère;89
+Marseille;2024-01-19;4;6;Pluie légère;86
+Bordeaux;2024-01-19;2;3;Pluie;95
+Toulouse;2024-01-19;2;5;Pluie;94
+Paris;2024-01-19;-1;2;Neige légère;91
+Lyon;2024-01-19;-2;1;Couvert;86
+Marseille;2024-01-19;3;5;Pluie;94
+Bordeaux;2024-01-19;0;2;Neige légère;95
+Toulouse;2024-01-19;1;4;Pluie;93
+Paris;2024-01-19;-1;1;Pluie légère;87
+Lyon;2024-01-19;-2;0;Neige légère;88
+Marseille;2024-01-19;5;7;Couvert;86
+Bordeaux;2024-01-19;2;5;Pluie;91
+Toulouse;2024-01-19;1;4;Pluie;92
+Paris;2024-01-19;0;2;Couvert;83
+Lyon;2024-01-19;-2;1;Pluie légère;83
+Marseille;2024-01-19;4;7;Couvert;85
+Bordeaux;2024-01-19;2;4;Pluie;91
+Toulouse;2024-01-19;2;4;Pluie légère;86
+Paris;2024-01-19;0;3;Pluie;88
+Lyon;2024-01-19;-2;0;Couvert;86
+Marseille;2024-01-19;6;8;Pluie légère;85
+Bordeaux;2024-01-19;3;6;Couvert;84
+Toulouse;2024-01-19;3;6;Pluie;88
+Paris;2024-01-19;1;4;Pluie légère;84
+Lyon;2024-01-19;1;4;Pluie légère;86
+Marseille;2024-01-19;6;8;Couvert;85
+Bordeaux;2024-01-19;4;6;Couvert;85
+Toulouse;2024-01-19;2;5;Pluie légère;81
+Paris;2024-01-19;2;4;Nuageux;76
+Lyon;2024-01-19;0;3;Nuageux;78
+Marseille;2024-01-19;8;9;Couvert;80
+Bordeaux;2024-01-19;3;6;Nuageux;75
+Toulouse;2024-01-19;5;7;Couvert;81
+Paris;2024-01-19;4;6;Nuageux;74
+Lyon;2024-01-19;3;5;Couvert;80
+Marseille;2024-01-19;8;11;Nuageux;70
+Bordeaux;2024-01-19;6;9;Nuageux;71
+Toulouse;2024-01-19;5;7;Nuageux;71
+Paris;2024-01-19;3;7;Nuageux;77
+Lyon;2024-01-19;4;6;Nuageux;75
+Marseille;2024-01-19;9;11;Ensoleillé;67
+Bordeaux;2024-01-19;6;8;Nuageux;70
+Toulouse;2024-01-19;6;9;Nuageux;77
+Paris;2024-01-19;5;8;Partiellement nuageux;65
+Lyon;2024-01-19;5;8;Nuageux;70
+Marseille;2024-01-19;11;13;Ensoleillé;65
+Bordeaux;2024-01-19;7;9;Partiellement nuageux;63
+Toulouse;2024-01-19;7;8;Nuageux;72
+Paris;2024-01-19;5;7;Partiellement nuageux;62
+Lyon;2024-01-19;4;7;Partiellement nuageux;65
+Marseille;2024-01-19;10;12;Ensoleillé;65
+Bordeaux;2024-01-19;7;10;Nuageux;70
+Toulouse;2024-01-19;8;10;Partiellement nuageux;62
+Paris;2024-01-19;5;8;Partiellement nuageux;58
+Lyon;2024-01-19;7;9;Partiellement nuageux;58
+Marseille;2024-01-19;11;14;Ensoleillé;66
+Bordeaux;2024-01-19;8;10;Partiellement nuageux;64
+Toulouse;2024-01-19;9;11;Ensoleillé;57
+Paris;2024-01-19;7;9;Partiellement nuageux;55
+Lyon;2024-01-19;5;8;Partiellement nuageux;61
+Marseille;2024-01-19;13;15;Ensoleillé;65
+Bordeaux;2024-01-19;9;11;Ensoleillé;62
+Toulouse;2024-01-19;9;12;Ensoleillé;61
+Paris;2024-01-19;6;8;Partiellement nuageux;57
+Lyon;2024-01-19;5;7;Partiellement nuageux;62
+Marseille;2024-01-19;13;16;Ensoleillé;60
+Bordeaux;2024-01-19;10;12;Ensoleillé;56
+Toulouse;2024-01-19;10;12;Ensoleillé;57
+Paris;2024-01-19;8;10;Partiellement nuageux;55
+Lyon;2024-01-19;7;9;Partiellement nuageux;58
+Marseille;2024-01-19;13;15;Ensoleillé;65
+Bordeaux;2024-01-19;8;10;Partiellement nuageux;62
+Toulouse;2024-01-19;9;12;Ensoleillé;63
+Paris;2024-01-19;7;9;Partiellement nuageux;58
+Lyon;2024-01-19;5;8;Partiellement nuageux;63
+Marseille;2024-01-19;13;15;Ensoleillé;57
+Bordeaux;2024-01-19;7;9;Partiellement nuageux;63
+Toulouse;2024-01-19;8;11;Partiellement nuageux;59
+Paris;2024-01-19;5;8;Partiellement nuageux;64
+Lyon;2024-01-19;5;7;Partiellement nuageux;63
+Marseille;2024-01-19;10;13;Ensoleillé;59
+Bordeaux;2024-01-19;8;10;Partiellement nuageux;61
+Toulouse;2024-01-19;8;10;Partiellement nuageux;65
+Paris;2024-01-19;6;8;Partiellement nuageux;67
+Lyon;2024-01-19;5;7;Partiellement nuageux;63
+Marseille;2024-01-19;11;13;Ensoleillé;68
+Bordeaux;2024-01-19;6;8;Nuageux;72
+Toulouse;2024-01-19;9;11;Ensoleillé;68
+Paris;2024-01-19;5;6;Nuageux;77
+Lyon;2024-01-19;2;4;Partiellement nuageux;66
+Marseille;2024-01-19;10;12;Nuageux;72
+Bordeaux;2024-01-19;5;8;Nuageux;77
+Toulouse;2024-01-19;5;7;Partiellement nuageux;67
+Paris;2024-01-19;3;6;Nuageux;71
+Lyon;2024-01-19;2;5;Nuageux;77
+Marseille;2024-01-19;8;10;Nuageux;77
+Bordeaux;2024-01-19;6;8;Nuageux;76
+Toulouse;2024-01-19;5;8;Nuageux;79
+Paris;2024-01-19;3;5;Nuageux;75
+Lyon;2024-01-19;2;4;Nuageux;77
+Marseille;2024-01-19;7;9;Nuageux;79
+Bordeaux;2024-01-19;4;7;Nuageux;79
+Toulouse;2024-01-19;5;6;Couvert;81
+Paris;2024-01-19;2;5;Couvert;84
+Lyon;2024-01-19;-1;2;Nuageux;78
+Marseille;2024-01-19;7;9;Nuageux;77
+Bordeaux;2024-01-19;3;5;Pluie;88
+Toulouse;2024-01-19;3;6;Couvert;86
+Paris;2024-01-19;0;3;Pluie;92
+Lyon;2024-01-19;-1;2;Pluie légère;82
+Marseille;2024-01-19;5;8;Pluie légère;83
+Bordeaux;2024-01-19;2;5;Pluie;90
+Toulouse;2024-01-19;1;4;Pluie légère;87
+Paris;2024-01-20;0;2;Neige légère;91
+Lyon;2024-01-20;-2;0;Neige légère;92
+Marseille;2024-01-20;5;8;Pluie;94
+Bordeaux;2024-01-20;1;4;Pluie légère;87
+Toulouse;2024-01-20;2;4;Pluie légère;87
+Paris;2024-01-20;0;2;Neige légère;88
+Lyon;2024-01-20;-1;0;Pluie légère;84
+Marseille;2024-01-20;5;7;Pluie;90
+Bordeaux;2024-01-20;1;4;Pluie;90
+Toulouse;2024-01-20;0;3;Pluie légère;84
+Paris;2024-01-20;-1;1;Neige légère;92
+Lyon;2024-01-20;-3;0;Couvert;87
+Marseille;2024-01-20;4;6;Pluie;96
+Bordeaux;2024-01-20;2;4;Pluie;89
+Toulouse;2024-01-20;0;3;Pluie;94
+Paris;2024-01-20;0;2;Pluie légère;86
+Lyon;2024-01-20;-2;1;Neige légère;88
+Marseille;2024-01-20;4;6;Couvert;86
+Bordeaux;2024-01-20;2;4;Pluie;94
+Toulouse;2024-01-20;1;3;Pluie;95
+Paris;2024-01-20;-2;1;Neige légère;91
+Lyon;2024-01-20;-1;1;Neige légère;94
+Marseille;2024-01-20;5;8;Pluie;88
+Bordeaux;2024-01-20;3;5;Couvert;87
+Toulouse;2024-01-20;2;4;Couvert;84
+Paris;2024-01-20;0;3;Pluie;91
+Lyon;2024-01-20;-1;2;Neige légère;90
+Marseille;2024-01-20;5;7;Pluie légère;80
+Bordeaux;2024-01-20;3;6;Couvert;87
+Toulouse;2024-01-20;2;4;Pluie;89
+Paris;2024-01-20;2;3;Couvert;85
+Lyon;2024-01-20;-1;2;Couvert;87
+Marseille;2024-01-20;7;9;Couvert;83
+Bordeaux;2024-01-20;3;6;Pluie;88
+Toulouse;2024-01-20;3;5;Nuageux;79
+Paris;2024-01-20;2;4;Pluie légère;84
+Lyon;2024-01-20;2;5;Nuageux;76
+Marseille;2024-01-20;7;10;Couvert;84
+Bordeaux;2024-01-20;4;7;Nuageux;79
+Toulouse;2024-01-20;3;6;Couvert;84
+Paris;2024-01-20;2;4;Nuageux;78
+Lyon;2024-01-20;2;4;Pluie légère;80
+Marseille;2024-01-20;8;10;Pluie légère;81
+Bordeaux;2024-01-20;4;8;Nuageux;74
+Toulouse;2024-01-20;6;8;Nuageux;75
+Paris;2024-01-20;4;7;Partiellement nuageux;65
+Lyon;2024-01-20;3;5;Nuageux;70
+Marseille;2024-01-20;9;11;Nuageux;75
+Bordeaux;2024-01-20;6;8;Nuageux;71
+Toulouse;2024-01-20;6;9;Nuageux;70
+Paris;2024-01-20;6;8;Nuageux;72
+Lyon;2024-01-20;5;7;Partiellement nuageux;64
+Marseille;2024-01-20;10;13;Ensoleillé;64
+Bordeaux;2024-01-20;6;8;Partiellement nuageux;64
+Toulouse;2024-01-20;8;11;Partiellement nuageux;62
+Paris;2024-01-20;5;7;Partiellement nuageux;59
+Lyon;2024-01-20;4;6;Partiellement nuageux;61
+Marseille;2024-01-20;9;12;Ensoleillé;66
+Bordeaux;2024-01-20;8;11;Partiellement nuageux;64
+Toulouse;2024-01-20;8;10;Partiellement nuageux;67
+Paris;2024-01-20;7;9;Partiellement nuageux;58
+Lyon;2024-01-20;5;8;Partiellement nuageux;65
+Marseille;2024-01-20;12;14;Ensoleillé;65
+Bordeaux;2024-01-20;9;11;Ensoleillé;58
+Toulouse;2024-01-20;7;10;Partiellement nuageux;57
+Paris;2024-01-20;7;10;Partiellement nuageux;65
+Lyon;2024-01-20;5;7;Partiellement nuageux;65
+Marseille;2024-01-20;11;13;Ensoleillé;58
+Bordeaux;2024-01-20;8;9;Partiellement nuageux;61
+Toulouse;2024-01-20;7;10;Partiellement nuageux;58
+Paris;2024-01-20;8;10;Partiellement nuageux;61
+Lyon;2024-01-20;5;7;Partiellement nuageux;55
+Marseille;2024-01-20;12;14;Ensoleillé;55
+Bordeaux;2024-01-20;10;12;Ensoleillé;61
+Toulouse;2024-01-20;10;13;Ensoleillé;62
+Paris;2024-01-20;7;10;Partiellement nuageux;60
+Lyon;2024-01-20;7;10;Partiellement nuageux;59
+Marseille;2024-01-20;12;13;Ensoleillé;61
+Bordeaux;2024-01-20;10;13;Ensoleillé;56
+Toulouse;2024-01-20;9;11;Ensoleillé;65
+Paris;2024-01-20;6;9;Partiellement nuageux;67
+Lyon;2024-01-20;7;8;Partiellement nuageux;61
+Marseille;2024-01-20;12;14;Ensoleillé;67
+Bordeaux;2024-01-20;8;10;Partiellement nuageux;64
+Toulouse;2024-01-20;9;11;Ensoleillé;61
+Paris;2024-01-20;6;8;Partiellement nuageux;66
+Lyon;2024-01-20;4;7;Nuageux;70
+Marseille;2024-01-20;12;15;Ensoleillé;66
+Bordeaux;2024-01-20;8;11;Partiellement nuageux;68
+Toulouse;2024-01-20;7;10;Partiellement nuageux;63
+Paris;2024-01-20;5;8;Partiellement nuageux;65
+Lyon;2024-01-20;4;6;Partiellement nuageux;63
+Marseille;2024-01-20;10;12;Ensoleillé;69
+Bordeaux;2024-01-20;7;10;Partiellement nuageux;69
+Toulouse;2024-01-20;8;11;Nuageux;71
+Paris;2024-01-20;4;6;Nuageux;73
+Lyon;2024-01-20;4;6;Nuageux;73
+Marseille;2024-01-20;10;13;Nuageux;73
+Bordeaux;2024-01-20;5;8;Partiellement nuageux;65
+Toulouse;2024-01-20;5;7;Nuageux;77
+Paris;2024-01-20;3;5;Nuageux;78
+Lyon;2024-01-20;2;4;Nuageux;71
+Marseille;2024-01-20;8;11;Nuageux;75
+Bordeaux;2024-01-20;5;8;Nuageux;73
+Toulouse;2024-01-20;5;7;Couvert;80
+Paris;2024-01-20;3;5;Couvert;81
+Lyon;2024-01-20;3;5;Nuageux;77
+Marseille;2024-01-20;6;9;Couvert;81
+Bordeaux;2024-01-20;3;6;Nuageux;77
+Toulouse;2024-01-20;3;5;Nuageux;75
+Paris;2024-01-20;1;4;Nuageux;78
+Lyon;2024-01-20;1;3;Couvert;85
+Marseille;2024-01-20;6;8;Pluie légère;83
+Bordeaux;2024-01-20;3;5;Pluie légère;83
+Toulouse;2024-01-20;3;6;Pluie légère;85
+Paris;2024-01-20;-1;1;Neige légère;88
+Lyon;2024-01-20;-1;2;Couvert;86
+Marseille;2024-01-20;6;8;Couvert;86
+Bordeaux;2024-01-20;3;5;Pluie légère;84
+Toulouse;2024-01-20;1;3;Couvert;87
+Paris;2024-01-21;0;2;Pluie légère;86
+Lyon;2024-01-21;-2;0;Neige légère;88
+Marseille;2024-01-21;4;6;Pluie légère;87
+Bordeaux;2024-01-21;2;4;Couvert;87
+Toulouse;2024-01-21;1;3;Pluie;91
+Paris;2024-01-21;-2;0;Neige légère;92
+Lyon;2024-01-21;-2;0;Neige légère;90
+Marseille;2024-01-21;5;7;Couvert;87
+Bordeaux;2024-01-21;2;5;Pluie;95
+Toulouse;2024-01-21;1;4;Pluie;92
+Paris;2024-01-21;-2;1;Neige légère;91
+Lyon;2024-01-21;-2;0;Pluie légère;84
+Marseille;2024-01-21;4;6;Couvert;86
+Bordeaux;2024-01-21;1;4;Couvert;87
+Toulouse;2024-01-21;0;3;Pluie légère;86
+Paris;2024-01-21;-2;0;Neige légère;91
+Lyon;2024-01-21;-2;0;Neige légère;90
+Marseille;2024-01-21;6;8;Pluie;93
+Bordeaux;2024-01-21;1;3;Pluie;90
+Toulouse;2024-01-21;2;5;Pluie;92
+Paris;2024-01-21;0;3;Couvert;86
+Lyon;2024-01-21;-1;2;Pluie légère;86
+Marseille;2024-01-21;4;6;Couvert;87
+Bordeaux;2024-01-21;2;4;Pluie légère;82
+Toulouse;2024-01-21;1;4;Pluie;93
+Paris;2024-01-21;-1;2;Pluie légère;86
+Lyon;2024-01-21;0;3;Couvert;83
+Marseille;2024-01-21;4;6;Pluie;92
+Bordeaux;2024-01-21;1;4;Pluie légère;86
+Toulouse;2024-01-21;3;4;Pluie légère;84
+Paris;2024-01-21;0;2;Couvert;82
+Lyon;2024-01-21;-1;1;Couvert;80
+Marseille;2024-01-21;6;9;Couvert;83
+Bordeaux;2024-01-21;2;4;Couvert;86
+Toulouse;2024-01-21;2;5;Pluie légère;84
+Paris;2024-01-21;1;4;Nuageux;73
+Lyon;2024-01-21;1;3;Nuageux;77
+Marseille;2024-01-21;6;8;Nuageux;75
+Bordeaux;2024-01-21;5;7;Nuageux;78
+Toulouse;2024-01-21;3;6;Pluie légère;83
+Paris;2024-01-21;3;5;Nuageux;75
+Lyon;2024-01-21;2;4;Pluie légère;80
+Marseille;2024-01-21;9;11;Ensoleillé;69
+Bordeaux;2024-01-21;6;8;Nuageux;78
+Toulouse;2024-01-21;5;7;Nuageux;70
+Paris;2024-01-21;3;5;Nuageux;75
+Lyon;2024-01-21;3;5;Nuageux;76
+Marseille;2024-01-21;9;12;Nuageux;75
+Bordeaux;2024-01-21;6;9;Nuageux;74
+Toulouse;2024-01-21;6;9;Nuageux;77
+Paris;2024-01-21;6;8;Partiellement nuageux;69
+Lyon;2024-01-21;4;7;Partiellement nuageux;63
+Marseille;2024-01-21;10;12;Nuageux;71
+Bordeaux;2024-01-21;6;9;Partiellement nuageux;67
+Toulouse;2024-01-21;7;9;Nuageux;73
+Paris;2024-01-21;6;9;Partiellement nuageux;60
+Lyon;2024-01-21;6;9;Partiellement nuageux;63
+Marseille;2024-01-21;11;14;Ensoleillé;67
+Bordeaux;2024-01-21;9;11;Ensoleillé;62
+Toulouse;2024-01-21;7;9;Partiellement nuageux;63
+Paris;2024-01-21;7;9;Partiellement nuageux;63
+Lyon;2024-01-21;6;8;Partiellement nuageux;63
+Marseille;2024-01-21;11;14;Ensoleillé;63
+Bordeaux;2024-01-21;8;11;Partiellement nuageux;64
+Toulouse;2024-01-21;9;12;Ensoleillé;60
+Paris;2024-01-21;6;9;Partiellement nuageux;66
+Lyon;2024-01-21;6;7;Partiellement nuageux;57
+Marseille;2024-01-21;12;14;Ensoleillé;59
+Bordeaux;2024-01-21;10;11;Ensoleillé;57
+Toulouse;2024-01-21;8;11;Partiellement nuageux;65
+Paris;2024-01-21;6;9;Partiellement nuageux;58
+Lyon;2024-01-21;6;10;Partiellement nuageux;56
+Marseille;2024-01-21;12;14;Ensoleillé;59
+Bordeaux;2024-01-21;9;12;Ensoleillé;61
+Toulouse;2024-01-21;10;12;Ensoleillé;65
+Paris;2024-01-21;8;11;Partiellement nuageux;62
+Lyon;2024-01-21;5;8;Partiellement nuageux;66
+Marseille;2024-01-21;11;14;Ensoleillé;64
+Bordeaux;2024-01-21;9;12;Ensoleillé;57
+Toulouse;2024-01-21;10;13;Ensoleillé;62
+Paris;2024-01-21;8;10;Partiellement nuageux;60
+Lyon;2024-01-21;5;8;Partiellement nuageux;56
+Marseille;2024-01-21;12;15;Ensoleillé;60
+Bordeaux;2024-01-21;8;11;Partiellement nuageux;56
+Toulouse;2024-01-21;10;13;Ensoleillé;57
+Paris;2024-01-21;6;8;Partiellement nuageux;64
+Lyon;2024-01-21;4;7;Partiellement nuageux;67
+Marseille;2024-01-21;10;12;Ensoleillé;69
+Bordeaux;2024-01-21;8;11;Partiellement nuageux;60
+Toulouse;2024-01-21;8;10;Partiellement nuageux;65
+Paris;2024-01-21;6;7;Partiellement nuageux;67
+Lyon;2024-01-21;4;6;Partiellement nuageux;62
+Marseille;2024-01-21;9;12;Nuageux;73
+Bordeaux;2024-01-21;7;9;Partiellement nuageux;65
+Toulouse;2024-01-21;6;9;Nuageux;72
+Paris;2024-01-21;4;6;Partiellement nuageux;67
+Lyon;2024-01-21;3;6;Nuageux;71
+Marseille;2024-01-21;8;11;Nuageux;75
+Bordeaux;2024-01-21;6;8;Nuageux;73
+Toulouse;2024-01-21;5;8;Nuageux;74
+Paris;2024-01-21;3;5;Nuageux;79
+Lyon;2024-01-21;2;4;Pluie légère;81
+Marseille;2024-01-21;9;12;Nuageux;75
+Bordeaux;2024-01-21;4;7;Nuageux;79
+Toulouse;2024-01-21;7;9;Nuageux;76
+Paris;2024-01-21;3;5;Couvert;80
+Lyon;2024-01-21;2;5;Couvert;84
+Marseille;2024-01-21;8;11;Nuageux;78
+Bordeaux;2024-01-21;5;7;Couvert;81
+Toulouse;2024-01-21;4;7;Nuageux;78
+Paris;2024-01-21;2;4;Pluie légère;83
+Lyon;2024-01-21;0;1;Couvert;81
+Marseille;2024-01-21;7;9;Nuageux;78
+Bordeaux;2024-01-21;2;4;Couvert;81
+Toulouse;2024-01-21;3;5;Couvert;87
+Paris;2024-01-21;1;2;Pluie;88
+Lyon;2024-01-21;0;2;Neige légère;91
+Marseille;2024-01-21;5;7;Couvert;86
+Bordeaux;2024-01-21;3;6;Couvert;86
+Toulouse;2024-01-21;2;5;Pluie;90
