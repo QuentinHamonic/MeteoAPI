@@ -1,4 +1,5 @@
 import { relevesRepository } from "../repositories/releves.repository.js";
+import { Releve } from "../models/releve.model.js";
 
 /**
  * Logique métier autour des relevés météo.
@@ -28,6 +29,73 @@ export class ReleveService {
         } else {
             return this.repository.findById(id_number)
         }
+    }
+
+    /**
+     * Crée un nouveau relevé après validation.
+     *
+     * @param {Object} donnees - Corps de la requête (req.body).
+     * @returns {Promise<{releve?: Object, erreurs?: string[]}>}
+     */
+    async creerReleve(donnees) {
+        const releve = new Releve({
+            id: null,
+            ville: donnees.ville,
+            date: donnees.date,
+            temperature_min: Number(donnees.temperature_min),
+            temperature_max: Number(donnees.temperature_max),
+            description: donnees.description,
+            humidite: Number(donnees.humidite)
+        });
+ 
+        const erreurs = releve.valider();
+        if (erreurs.length > 0) return { erreurs };
+ 
+        const sauvegarde = await this.repository.save(releve);
+        return { releve: sauvegarde };
+    }
+ 
+    /**
+     * Met à jour un relevé existant après validation.
+     *
+     * @param {string|number} id
+     * @param {Object} donnees - Corps de la requête (req.body).
+     * @returns {Promise<{releve?: Object, erreurs?: string[], introuvable?: boolean}>}
+     */
+    async modifierReleve(id, donnees) {
+        const id_number = Number(id);
+        if (isNaN(id_number)) return { introuvable: true };
+ 
+        const existant = await this.repository.findById(id_number);
+        if (!existant) return { introuvable: true };
+ 
+        const releve = new Releve({
+            id: id_number,           // on garde l'id existant
+            ville: donnees.ville,
+            date: donnees.date,
+            temperature_min: Number(donnees.temperature_min),
+            temperature_max: Number(donnees.temperature_max),
+            description: donnees.description,
+            humidite: Number(donnees.humidite)
+        });
+ 
+        const erreurs = releve.valider();
+        if (erreurs.length > 0) return { erreurs };
+ 
+        const sauvegarde = await this.repository.save(releve);
+        return { releve: sauvegarde };
+    }
+ 
+    /**
+     * Supprime un relevé par son identifiant.
+     *
+     * @param {string|number} id
+     * @returns {Promise<boolean>} true si supprimé, false si introuvable.
+     */
+    async supprimerReleve(id) {
+        const id_number = Number(id);
+        if (isNaN(id_number)) return false;
+        return this.repository.deleteById(id_number);
     }
 }
 
