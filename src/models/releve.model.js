@@ -103,7 +103,7 @@ export class Releve {
 
         this.#description === undefined ? tableau.push('description non déclarée') : '';
         this.#humidite === undefined ? tableau.push('humidite non déclarée') : '';
-        isNaN(this.#humidite) ? tableau.push("humidite doit être un nombre") :'' ;
+        isNaN(this.#humidite) || this.#humidite < 0 || this.#humidite > 100 ? tableau.push("humidite doit être un nombre entre 0 et 100") :'' ;
 
         return tableau
     }
