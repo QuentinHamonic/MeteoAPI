@@ -46,15 +46,23 @@ export class ReleveRepository {
      */
     async save(releve) {
         const releves = await this.findAll()
-        const max_id = releves.reduce((max, r) => Math.max(max, r.id), 0);
 
-        releves.id = max_id + 1;
-
-        const nouveauReleve = { ...releve.toJSON(), id: max_id + 1 };
-        releves.push(nouveauReleve);
-        await writeCsv(this.cheminCsv, this.releves);
-
-        return nouveauReleve.id;
+        if (releve.id === null) {
+            // Création : on attribue un nouvel id
+            const max_id = releves.reduce((max, r) => Math.max(max, r.id), 0);
+            const nouveauReleve = { ...releve.toJSON(), id: max_id + 1 };
+            releves.push(nouveauReleve);
+            await writeCsv(this.cheminCsv, this.releves);
+            return nouveauReleve;
+        } else {
+            // Mise à jour : on remplace l'entrée existante
+            const index = releves.findIndex(r => r.id === releve.id);
+            if (index === -1) return null;
+            const releveModifie = releve.toJSON();
+            releves[index] = releveModifie;
+            await writeCsv(this.cheminCsv, this.releves);
+            return releveModifie;
+        }
     }
 
     /**
