@@ -1,4 +1,4 @@
-import { agregatService } from "../services/agregats.service.js";
+import { statsService } from "../services/stats.service.js";
  
 /**
  * Pont HTTP pour la ressource stats.
@@ -18,4 +18,4 @@ export class StatsController {
     };
 }
  
-export const statsController = new StatsController(agregatService);
+export const statsController = new StatsController(statsService);
