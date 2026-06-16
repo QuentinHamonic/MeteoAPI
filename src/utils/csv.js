@@ -19,7 +19,7 @@ function parserLigneCSV(ligne, separateur) {
 }
 
 export async function parseCsv(CheminCsv) {
-    console.log(CheminCsv)
+    //console.log(CheminCsv)
     const csv = await readFile(CheminCsv, "utf-8");
 
     // La première ligne est l'en-tête — on la saute
