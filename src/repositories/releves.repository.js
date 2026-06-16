@@ -1,4 +1,4 @@
-import { parseCsv } from "../utils/csv.js";
+import { parseCsv, writeCsv } from "../utils/csv.js";
 import { config } from "../config.js"
 
 /**
@@ -35,8 +35,8 @@ export class ReleveRepository {
      * @returns {Promise<Object|undefined>} Le relevé correspondant, ou undefined si introuvable.
      */
     async findById(id) {
-        const csv = parseCsv(this.cheminCsv)
-        return csv[id]
+        const releves = await this.findAll()
+        return releves.find(releve => releve.id === Number(id))
     }
 
     /**
@@ -45,8 +45,34 @@ export class ReleveRepository {
      * @returns {Promise<number>} L'identifiant attribué au relevé.
      */
     async save(releve) {
-        // A FAIRE DEFI
-        return 0
+        const releves = await this.findAll()
+        const max_id = releves.reduce((max, r) => Math.max(max, r.id), 0);
+
+        releves.id = max_id + 1;
+
+        const nouveauReleve = {...releve.toJSON(), id: max_id + 1};
+        releves.push(nouveauReleve);
+        await writeCsv(this.cheminCsv, this.releves);
+        
+        return nouveauReleve.id;
+    }
+
+    /**
+     * Supprime un relevé par son identifiant et persiste le changement dans le CSV.
+     * @param {number} id - Identifiant du relevé à supprimer.
+     * @returns {Promise<boolean>} true si un relevé a été supprimé, false si aucun ne correspondait.
+     */
+    async deleteById(id) {
+        const releves = await this.findAll()
+        const index = releves.findIndex(releve => releve.id === Number(id))
+
+        if (index === -1) {
+            return false
+        }
+
+        releves.splice(index, 1)
+        await writeCsv(this.cheminCsv, this.releves)
+        return true
     }
 
 }
