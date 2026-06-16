@@ -15,7 +15,7 @@ export class ReleveController {
     getUnReleve = async (req, res) => {
         const releve = await this.service.getReleveParId(req.params.id);
         if(releve === undefined){
-            res.status(404)
+            return res.status(404).json({erreur : `Relevé ${req.params.id} introuvable`});
         }
         res.json(releve)
     } 
