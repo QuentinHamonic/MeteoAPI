@@ -1,5 +1,6 @@
 import express from "express";
 import relevesRoutes from "./routes/releves.routes.js";
+import statsRoutes from "./routes/stats.routes.js";
 import villesRoutes from "./routes/villes.routes.js";
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
@@ -17,7 +18,9 @@ app.get('/healthcheck', (req, res) => {
 });
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(spec));
+
 app.use("/releves", relevesRoutes);
+app.use("/stats", statsRoutes);
 app.use("/villes", villesRoutes)
 
 export default app;

@@ -13,6 +13,7 @@ const router = Router();
  *         description: Tableau des relevés
  */
 router.get("/", controller.listerReleves);
+
 /**
  * @openapi
  * /releves/{id}:

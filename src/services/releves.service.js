@@ -29,7 +29,7 @@ export class ReleveService {
             return this.repository.findById(id_number)
         }
     }
-
 }
+
 // on câble le service avec le repository, et on exporte l'instance prête
 export const releveService = new ReleveService(relevesRepository);

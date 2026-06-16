@@ -1,6 +1,3 @@
-// export const CheminCsv = '../donnees/meteo.csv'
-
-// src/config.js
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
 

@@ -74,7 +74,6 @@ export class ReleveRepository {
         await writeCsv(this.cheminCsv, this.releves)
         return true
     }
-
 }
 
 export const relevesRepository = new ReleveRepository(config.cheminCsv);
