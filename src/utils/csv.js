@@ -38,8 +38,8 @@ export async function parseCsv(CheminCsv) {
             description: colonnes[4]?.trim() ?? '',
             humidite: parseInt(colonnes[5]?.trim() ?? '')
         };
-    }).filter(mesure => mesure.ville && mesure.date && mesure.temperature_min &&
-         mesure.temperature_max && mesure.description && mesure.humidite);
+    }).filter(mesure => mesure.ville && mesure.date && !isNaN(mesure.temperature_min) &&
+         !isNaN(mesure.temperature_max) && mesure.description && !isNaN(mesure.humidite));
 }
 
 /**
