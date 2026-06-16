@@ -24,7 +24,7 @@ router.get("/", controller.listerVilles);
  *         required: true
  *         schema:
  *           type: string
- *         description: Nom de la ville (ex: Paris)
+ *         description: "Nom de la ville (ex: Paris)"
  *     responses:
  *       200:
  *         description: Liste des relevés pour cette ville

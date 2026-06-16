@@ -25,7 +25,7 @@ export class VilleService {
             nbReleves:    (await this.getRelevesParVille(ville)).length,
             tempMin:      await this.temperatureMinimumEnregistree(ville),
             tempMax:      await this.temperatureMaximumEnregistree(ville),
-            humidite_moy: await this.humiditeMoyenne(ville),
+            humidite_moy: Math.round(await this.humiditeMoyenne(ville) * 10)/10,
         })));
     }
 
@@ -36,7 +36,7 @@ export class VilleService {
      */
     async getRelevesParVille(ville) {
         const releves = await this.repository.findAll();
-        return releves.filter(r => r.ville === ville);
+        return releves.filter(r => r.ville.toLowerCase() === ville.toLowerCase());
     }
 
     /**
