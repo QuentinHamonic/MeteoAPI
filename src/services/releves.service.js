@@ -20,6 +20,16 @@ export class ReleveService {
         // ici viendra le métier : tri, filtres, calculs .
         return releves;
     }
+
+    async getReleveParId(id) {
+        const id_number = parseInt(id);
+        if (isNaN(id)) {
+            return undefined
+        } else {
+            return this.repository.findById(id_number)
+        }
+    }
+
 }
 // on câble le service avec le repository, et on exporte l'instance prête
 export const releveService = new ReleveService(relevesRepository);

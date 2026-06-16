@@ -24,7 +24,7 @@ export class ReleveRepository {
             this.releves = parse
             return parse
         }
-        else{
+        else {
             return this.releves
         }
     }
@@ -50,10 +50,10 @@ export class ReleveRepository {
 
         releves.id = max_id + 1;
 
-        const nouveauReleve = {...releve.toJSON(), id: max_id + 1};
+        const nouveauReleve = { ...releve.toJSON(), id: max_id + 1 };
         releves.push(nouveauReleve);
         await writeCsv(this.cheminCsv, this.releves);
-        
+
         return nouveauReleve.id;
     }
 
