@@ -243,6 +243,7 @@ async function afficherStats() {
     console.log(`  Temp. moyenne     : ${fmt.info(stats.temperatureMoyenne + ' °C')}`);
     console.log(`  Humidité moyenne  : ${fmt.info(stats.humiditeMoyenne + ' %')}`);
     console.log(`  Villes + humides  : ${fmt.info((stats.villesPlusHumides ?? []).join(', '))}`);
+    console.log(`  Villes + chaudes  : ${fmt.info((stats.villesPlusChaudes ?? []).join(', '))}`);
     await pauserEntrée();
 }
 
