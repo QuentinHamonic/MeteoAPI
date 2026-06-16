@@ -32,6 +32,60 @@ export class Releve {
         this.#humidite = donnees.humidite
     }
 
+    get id(){
+        return this.#id;
+    }
+    set id(x){
+        this.#id = x;
+    }
+
+    get ville(){
+        return this.#ville;
+    }
+    set ville(x){
+        this.#ville = x;
+    }
+
+    get date(){
+        return this.#date;
+    }
+    set date(x){
+        this.#date = x;
+    }
+
+    get temperature_min(){
+        return this.#temperature_min;
+    }
+    set temperature_min(x){
+        this.#temperature_min = x;
+    }
+
+    get temperature_max(){
+        return this.#temperature_max;
+    }
+    set temperature_max(x){
+        this.#temperature_max = x;
+    }
+
+    get description(){
+        return this.#description;
+    }
+    set description(x){
+        this.#description = x;
+    }
+
+    get humidite(){
+        return this.#humidite;
+    }
+    set humidite(x){
+        this.#humidite = x;
+    }
+
+
+
+
+
+
     /**
      * Vérifie que le relevé respecte les règles métier attendues.
      * @returns {string[]} La liste des messages d'erreur ; tableau vide si le relevé est valide.
