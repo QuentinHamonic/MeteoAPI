@@ -1,7 +1,6 @@
 import { fileURLToPath } from "node:url";
 import { readFile, writeFile } from 'node:fs/promises';
 
-
 function parserLigneCSV(ligne, separateur) {
     const colonnes = [];
     let valeur = '';
@@ -20,14 +19,12 @@ function parserLigneCSV(ligne, separateur) {
 }
 
 export async function parseCsv(CheminCsv) {
-
     console.log(CheminCsv)
     const csv = await readFile(CheminCsv, "utf-8");
 
     // La première ligne est l'en-tête — on la saute
     const lignes = csv.split('\n').filter(l => l.trim());
     const separateur = lignes[0]?.includes(';') ? ';' : ',';
-
 
     return lignes.slice(1).map((ligne, index) => {
 

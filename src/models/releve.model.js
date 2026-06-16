@@ -2,7 +2,6 @@
  * Représente un relevé météo pour une ville et une date données.
  */
 export class Releve {
-
     #id
     #ville
     #date
@@ -102,5 +101,4 @@ export class Releve {
 
         return new Releve(mapped);
     }
-
 }
