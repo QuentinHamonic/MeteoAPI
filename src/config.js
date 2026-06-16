@@ -1,8 +1,6 @@
-import { fileURLToPath } from 'node:url';
-import { join, dirname } from 'node:path';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+import { join } from 'node:path';
 
 export const config = {
-  cheminCsv: join(__dirname, '../donnees/meteo.csv'),
+  port: process.env.PORT ?? 3000,
+  cheminCsv: join(process.cwd(), process.env.CSV_PATH ?? 'donnees/meteo.csv'),
 };
