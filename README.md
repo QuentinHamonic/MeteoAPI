@@ -66,4 +66,4 @@ L'API doit être démarrée au préalable. L'URL de base est configurable via `A
 
 ## Licence
 
-ISC
+[MIT](LICENSE)

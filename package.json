@@ -13,8 +13,8 @@
     "url": "git+https://github.com/QuentinHamonic/MeteoAPI.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Quentin Hamonic",
+  "license": "MIT",
   "type": "module",
   "bugs": {
     "url": "https://github.com/QuentinHamonic/MeteoAPI/issues"
