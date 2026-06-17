@@ -1,13 +1,19 @@
 import { relevesRepository } from "../repositories/releves.repository.js";
 
+/**
+ * Logique métier autour des statistiques globales — dérive ses données depuis le repository des relevés.
+ */
 export class StatsService {
+    /**
+     * @param {import("../repositories/releves.repository.js").ReleveRepository} repository - Repository injecté pour l'accès aux relevés.
+     */
     constructor(repository) {
         this.repository = repository; // dépendance injectée, pas créée ici
     }
 
     /**
-     * Récupère tous les relevés météo.
-     * @returns {Promise<Object[]>} Objet Stats.
+     * Calcule et retourne les statistiques globales sur l'ensemble des relevés.
+     * @returns {Promise<{temperatureMinAbsolue: number, temperatureMaxAbsolue: number, temperatureMoyenne: number, humiditeMoyenne: number, nombreTotalReleves: number, nombreVilles: number, villesPlusHumides: string[], villesPlusChaudes: string[]}>}
      */
     async getStats() {
         const releves = await this.repository.findAll();
@@ -18,7 +24,7 @@ export class StatsService {
      * Calcule les statistiques globales à partir d'un tableau de relevés.
      *
      * @param {Object[]} releves - Tableau de TOUS les relevés.
-     * @returns {Stats}
+     * @returns {Object} Les statistiques calculées (températures, humidité, classements par ville).
      */
     #calculerStats(releves) {
         const n = releves.length;

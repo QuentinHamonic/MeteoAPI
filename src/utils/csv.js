@@ -18,6 +18,12 @@ function parserLigneCSV(ligne, separateur) {
     return colonnes;
 }
 
+/**
+ * Lit et parse le fichier CSV des relevés météo.
+ * Ignore la ligne d'en-tête et toute ligne dont une colonne est manquante ou invalide.
+ * @param {string} CheminCsv - Chemin absolu vers le fichier CSV.
+ * @returns {Promise<Object[]>} La liste des relevés, avec un id généré (index + 1).
+ */
 export async function parseCsv(CheminCsv) {
     //console.log(CheminCsv)
     const csv = await readFile(CheminCsv, "utf-8");

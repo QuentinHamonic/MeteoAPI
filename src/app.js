@@ -9,12 +9,22 @@ import {gestionErreurs} from "./middlewares/erreur.js"
 
 const spec = swaggerJsdoc({
 definition: { openapi: "3.0.0", info: { title: "MétéoAPI", version: "1.0.0" } },
-apis: ["./src/routes/*.js"], // fichiers où chercher les annotations
+apis: ["./src/routes/*.js", "./src/app.js"], // fichiers où chercher les annotations
 });
 const app = express();
 
 app.use(express.json());
 app.use(logger)
+
+/**
+ * @openapi
+ * /healthcheck:
+ *   get:
+ *     summary: Vérifie que l'API répond
+ *     responses:
+ *       200:
+ *         description: L'API est en ligne
+ */
 app.get('/healthcheck', (req, res) => {
     res.status(200).json({ status: "ok" });
 });

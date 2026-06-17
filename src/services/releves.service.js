@@ -22,6 +22,11 @@ export class ReleveService {
         return releves;
     }
 
+    /**
+     * Récupère un relevé par son identifiant.
+     * @param {string|number} id - Identifiant du relevé (converti en entier).
+     * @returns {Promise<Object|undefined>} Le relevé correspondant, ou undefined si l'id est invalide ou introuvable.
+     */
     async getReleveParId(id) {
         const id_number = parseInt(id);
         if (isNaN(id)) {

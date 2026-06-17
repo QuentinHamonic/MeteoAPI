@@ -38,15 +38,31 @@ Copie `.env.example` en `.env` et ajuste si besoin :
 
 ## Endpoints
 
-| Méthode | Route            | Description                              |
-| ------- | ---------------- | ---------------------------------------- |
-| `GET`   | `/healthcheck`   | Vérifie l'état de l'API                  |
-| `GET`   | `/releves`       | Liste tous les relevés météo             |
-| `GET`   | `/releves/:id`   | Récupère un relevé par son identifiant   |
-| `GET`   | `/villes`        | Liste les villes avec leurs agrégats     |
-| `GET`   | `/villes/:ville` | Relevés météo d'une ville                |
-| `GET`   | `/stats`         | Statistiques globales                    |
-| `GET`   | `/api-docs`      | Documentation Swagger interactive        |
+| Méthode  | Route            | Description                              |
+| -------- | ---------------- | ---------------------------------------- |
+| `GET`    | `/healthcheck`   | Vérifie l'état de l'API                  |
+| `GET`    | `/releves`       | Liste tous les relevés météo             |
+| `GET`    | `/releves/:id`   | Récupère un relevé par son identifiant   |
+| `POST`   | `/releves`       | Crée un nouveau relevé                   |
+| `PUT`    | `/releves/:id`   | Modifie un relevé existant               |
+| `DELETE` | `/releves/:id`   | Supprime un relevé                       |
+| `GET`    | `/villes`        | Liste les villes avec leurs agrégats     |
+| `GET`    | `/villes/:ville` | Relevés météo d'une ville                |
+| `GET`    | `/stats`         | Statistiques globales                    |
+| `GET`    | `/api-docs`      | Documentation Swagger interactive        |
+
+## Client CLI
+
+Le dossier [`MeteoCLI/`](MeteoCLI/) contient un client en ligne de commande, indépendant de l'API (aucun fichier partagé, communication uniquement via HTTP).
+
+```bash
+cd MeteoCLI
+npm install
+cp .env.example .env
+npm start
+```
+
+L'API doit être démarrée au préalable. L'URL de base est configurable via `API_URL` dans `MeteoCLI/.env` (défaut : `http://localhost:3000`).
 
 ## Licence
 
