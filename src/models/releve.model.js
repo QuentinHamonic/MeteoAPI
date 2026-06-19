@@ -1,4 +1,17 @@
 /**
+ * Vérifie qu'une chaîne "YYYY-MM-DD" correspond à une date réelle du calendrier.
+ * Rejette les dates au bon format mais inexistantes (ex : 2024-02-30, 2024-13-01, 2023-02-29).
+ * @param {string} s - Chaîne déjà validée au format YYYY-MM-DD.
+ * @returns {boolean} true si la date existe réellement.
+ */
+function estDateCalendaireValide(s) {
+    const [annee, mois, jour] = s.split('-').map(Number);
+    const d = new Date(annee, mois - 1, jour);
+    // Si un champ a "débordé" (ex : 30 février → 1er mars), les composants ne correspondent plus.
+    return d.getFullYear() === annee && d.getMonth() === mois - 1 && d.getDate() === jour;
+}
+
+/**
  * Représente un relevé météo pour une ville et une date données.
  */
 export class Releve {
@@ -91,19 +104,43 @@ export class Releve {
      */
     valider(){
         const tableau = [];
-        this.#ville === undefined ? tableau.push('ville non déclarée') : '';
-        this.#date === undefined ? tableau.push('date non déclarée') : '';
 
-        this.#temperature_min === undefined ? tableau.push('temperature_min non déclarée') : '';
-        isNaN(this.#temperature_min) ? tableau.push("temperature_min doit être un nombre") : '';
-        this.#temperature_max === undefined ? tableau.push('temperature_max non déclarée') :'' ;
-        isNaN(this.#temperature_max) ? tableau.push("temperature_max doit être un nombre") :'' ;
+        if (typeof this.#ville !== 'string' || this.#ville.trim() === '') {
+            tableau.push('ville doit être une chaîne non vide');
+        }
 
-        this.#temperature_max > this.#temperature_min ? '' : tableau.push('temperature_max doit être supérieure à temperature_min');
+        const formatDate = /^\d{4}-\d{2}-\d{2}$/;
+        if (typeof this.#date !== 'string' || !formatDate.test(this.#date)) {
+            tableau.push('date doit être une chaîne au format YYYY-MM-DD');
+        } else if (!estDateCalendaireValide(this.#date)) {
+            tableau.push('date doit être une date réelle du calendrier (ex : 2024-02-30 est invalide)');
+        }
 
-        this.#description === undefined ? tableau.push('description non déclarée') : '';
-        this.#humidite === undefined ? tableau.push('humidite non déclarée') : '';
-        isNaN(this.#humidite) || this.#humidite < 0 || this.#humidite > 100 ? tableau.push("humidite doit être un nombre entre 0 et 100") :'' ;
+        if (this.#temperature_min === undefined) {
+            tableau.push('temperature_min non déclarée');
+        } else if (isNaN(this.#temperature_min)) {
+            tableau.push('temperature_min doit être un nombre');
+        }
+
+        if (this.#temperature_max === undefined) {
+            tableau.push('temperature_max non déclarée');
+        } else if (isNaN(this.#temperature_max)) {
+            tableau.push('temperature_max doit être un nombre');
+        }
+
+        if (!isNaN(this.#temperature_min) && !isNaN(this.#temperature_max) && this.#temperature_max <= this.#temperature_min) {
+            tableau.push('temperature_max doit être supérieure à temperature_min');
+        }
+
+        if (typeof this.#description !== 'string' || this.#description.trim() === '') {
+            tableau.push('description doit être une chaîne non vide');
+        }
+
+        if (this.#humidite === undefined) {
+            tableau.push('humidite non déclarée');
+        } else if (isNaN(this.#humidite) || this.#humidite < 0 || this.#humidite > 100) {
+            tableau.push('humidite doit être un nombre entre 0 et 100');
+        }
 
         return tableau
     }

@@ -1,5 +1,4 @@
-import { fileURLToPath } from "node:url";
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 
 function parserLigneCSV(ligne, separateur) {
     const colonnes = [];
@@ -46,28 +45,5 @@ export async function parseCsv(CheminCsv) {
         };
     }).filter(mesure => mesure.ville && mesure.date && !isNaN(mesure.temperature_min) &&
          !isNaN(mesure.temperature_max) && mesure.description && !isNaN(mesure.humidite));
-}
-
-/**
- * Réécrit le fichier CSV à partir de la liste des relevés (sans la colonne id, absente du CSV).
- * @param {string} cheminCsv - Chemin absolu vers le fichier CSV des relevés.
- * @param {Object[]} releves - La liste complète des relevés à persister.
- * @returns {Promise<void>}
- */
-export async function writeCsv(cheminCsv, releves) {
-    const entete = 'ville;date;temperature_min;temperature_max;description;humidite';
-
-    const lignes = releves.map(releve => [
-        releve.ville,
-        releve.date,
-        releve.temperature_min,
-        releve.temperature_max,
-        releve.description,
-        releve.humidite
-    ].join(';'));
-
-    const contenu = [entete, ...lignes].join('\n') + '\n';
-
-    await writeFile(cheminCsv, contenu, 'utf-8');
 }
 

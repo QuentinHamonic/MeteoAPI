@@ -1,32 +1,32 @@
-import { parseCsv, writeCsv } from "../utils/csv.js";
-import { config } from "../config.js"
+import db from "../db.js";
 
 /**
- * Accès aux données des relevés météo, stockées dans un fichier CSV.
+ * Accès aux données des relevés météo, stockées dans une base SQLite.
+ * Les méthodes restent `async` pour préserver le contrat attendu par le service,
+ * même si better-sqlite3 est synchrone.
  */
 export class ReleveRepository {
-    /**
-     * @param {string} cheminCsv - Chemin absolu vers le fichier CSV des relevés.
-     */
-    constructor(cheminCsv) {
-        this.releves = null
-        this.cheminCsv = cheminCsv;
-        console.log(cheminCsv)
-    }
+    // Requêtes préparées une fois, réutilisées à chaque appel.
+    #selectAll  = db.prepare("SELECT * FROM releves ORDER BY id");
+    #selectById = db.prepare("SELECT * FROM releves WHERE id = ?");
+    #insert     = db.prepare(`
+        INSERT INTO releves (ville, date, temperature_min, temperature_max, description, humidite)
+        VALUES (@ville, @date, @temperature_min, @temperature_max, @description, @humidite)
+    `);
+    #update     = db.prepare(`
+        UPDATE releves
+        SET ville = @ville, date = @date, temperature_min = @temperature_min,
+            temperature_max = @temperature_max, description = @description, humidite = @humidite
+        WHERE id = @id
+    `);
+    #delete     = db.prepare("DELETE FROM releves WHERE id = ?");
 
     /**
-     * Récupère tous les relevés présents dans le CSV.
-     * @returns {Promise<Object[]>} La liste de tous les relevés.
+     * Récupère tous les relevés.
+     * @returns {Promise<Object[]>} La liste de tous les relevés, triés par id.
      */
     async findAll() {
-        if (this.releves === null) {
-            const parse = await parseCsv(this.cheminCsv)
-            this.releves = parse
-            return parse
-        }
-        else {
-            return this.releves
-        }
+        return this.#selectAll.all();
     }
 
     /**
@@ -35,53 +35,37 @@ export class ReleveRepository {
      * @returns {Promise<Object|undefined>} Le relevé correspondant, ou undefined si introuvable.
      */
     async findById(id) {
-        const releves = await this.findAll()
-        return releves.find(releve => releve.id === Number(id))
+        return this.#selectById.get(Number(id));
     }
 
     /**
-     * Enregistre un nouveau relevé.
+     * Crée un nouveau relevé (id === null) ou met à jour un relevé existant.
      * @param {import("../models/releve.model.js").Releve} releve - Le relevé à enregistrer.
-     * @returns {Promise<number>} L'identifiant attribué au relevé.
+     * @returns {Promise<Object|null>} Le relevé persisté (avec son id), ou null si l'id à modifier n'existe pas.
      */
     async save(releve) {
-        const releves = await this.findAll()
+        const { id, ville, date, temperature_min, temperature_max, description, humidite } = releve.toJSON();
+        const champs = { ville, date, temperature_min, temperature_max, description, humidite };
 
-        if (releve.id === null) {
-            // Création : on attribue un nouvel id
-            const max_id = releves.reduce((max, r) => Math.max(max, r.id), 0);
-            const nouveauReleve = { ...releve.toJSON(), id: max_id + 1 };
-            releves.push(nouveauReleve);
-            await writeCsv(this.cheminCsv, this.releves);
-            return nouveauReleve;
-        } else {
-            // Mise à jour : on remplace l'entrée existante
-            const index = releves.findIndex(r => r.id === releve.id);
-            if (index === -1) return null;
-            const releveModifie = releve.toJSON();
-            releves[index] = releveModifie;
-            await writeCsv(this.cheminCsv, this.releves);
-            return releveModifie;
+        if (id === null) {
+            const info = this.#insert.run(champs);
+            return this.#selectById.get(info.lastInsertRowid);
         }
+
+        const info = this.#update.run({ ...champs, id });
+        if (info.changes === 0) return null;
+        return this.#selectById.get(id);
     }
 
     /**
-     * Supprime un relevé par son identifiant et persiste le changement dans le CSV.
+     * Supprime un relevé par son identifiant.
      * @param {number} id - Identifiant du relevé à supprimer.
      * @returns {Promise<boolean>} true si un relevé a été supprimé, false si aucun ne correspondait.
      */
     async deleteById(id) {
-        const releves = await this.findAll()
-        const index = releves.findIndex(releve => releve.id === Number(id))
-
-        if (index === -1) {
-            return false
-        }
-
-        releves.splice(index, 1)
-        await writeCsv(this.cheminCsv, this.releves)
-        return true
+        const info = this.#delete.run(Number(id));
+        return info.changes > 0;
     }
 }
 
-export const relevesRepository = new ReleveRepository(config.cheminCsv);
+export const relevesRepository = new ReleveRepository();

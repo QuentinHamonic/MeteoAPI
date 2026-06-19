@@ -4,3 +4,8 @@ dist/
 coverage/
 *.log
 ROADMAP.md
+
+# Base SQLite générée à partir du CSV (fichiers WAL inclus)
+*.db
+*.db-shm
+*.db-wal

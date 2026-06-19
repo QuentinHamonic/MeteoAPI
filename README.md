@@ -2,6 +2,8 @@
 
 API météo construite avec Node.js et Express.
 
+Les données sont stockées dans une base **SQLite** ([better-sqlite3](https://github.com/WiseLibs/better-sqlite3)). Au premier démarrage, si la base est vide, les relevés du fichier CSV (`donnees/meteo.csv`) sont importés automatiquement.
+
 ## Prérequis
 
 - [Node.js](https://nodejs.org/) (version 18 ou supérieure)
@@ -31,10 +33,11 @@ Le serveur démarre par défaut sur [http://localhost:3000](http://localhost:300
 
 Copie `.env.example` en `.env` et ajuste si besoin :
 
-| Variable   | Description               | Défaut                |
-| ---------- | ------------------------- | --------------------- |
-| `PORT`     | Port d'écoute HTTP        | `3000`                |
-| `CSV_PATH` | Chemin relatif vers le CSV | `donnees/meteo.csv`  |
+| Variable   | Description                              | Défaut             |
+| ---------- | ---------------------------------------- | ------------------ |
+| `PORT`     | Port d'écoute HTTP                       | `3000`             |
+| `CSV_PATH` | Chemin relatif vers le CSV (import initial) | `donnees/meteo.csv` |
+| `DB_PATH`  | Chemin relatif vers la base SQLite       | `donnees/meteo.db` |
 
 ## Endpoints
 

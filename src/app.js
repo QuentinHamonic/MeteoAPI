@@ -35,6 +35,10 @@ app.use("/releves", relevesRoutes);
 app.use("/stats", statsRoutes);
 app.use("/villes", villesRoutes)
 
+app.use((req, res) => {
+    res.status(404).json({ erreur: `Route ${req.method} ${req.originalUrl} introuvable` });
+});
+
 app.use(gestionErreurs);
 
 export default app;

@@ -8,5 +8,9 @@
  */
 export function gestionErreurs(err, req, res, next) {
     console.error(err);
-    res.status(err.status ?? 500).json({ erreur: err.message ?? "Erreur serveur" });
+    const status = err.status ?? 500;
+    // Les erreurs sans status explicite sont inattendues (bug, fichier manquant, etc.) :
+    // on ne renvoie pas err.message au client pour éviter de leaker des détails internes (chemins, stack...).
+    const erreur = err.status ? (err.message ?? "Erreur serveur") : "Erreur interne du serveur";
+    res.status(status).json({ erreur });
 }
